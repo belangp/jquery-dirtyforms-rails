@@ -445,7 +445,7 @@ License MIT
             $form = $field.parents('form');
 
         // Mark the field dirty/clean
-        var field_changed = (isDirty !=== $field.hasClass(dirtyClass));
+        var field_changed = (isDirty !== $field.hasClass(dirtyClass));
         dirtylog('Field ' + $field.attr('id') + ' change trigger: ' + field_changed);
 
         $field.toggleClass(dirtyClass, isDirty);
