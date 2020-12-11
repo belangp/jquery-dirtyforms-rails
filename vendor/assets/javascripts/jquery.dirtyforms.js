@@ -454,6 +454,7 @@ License MIT
         if (field_changed) {
             dirtylog('Triggering dirtyfield.dirtyforms for ' + $field.attr('id') );
             $field.trigger('dirtyfield.dirtyforms');
+        }
 
         if (changed) {
             dirtylog('Setting dirty status to ' + isDirty + ' on form ' + $form.attr('id'));
